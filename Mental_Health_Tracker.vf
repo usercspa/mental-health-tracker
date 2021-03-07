@@ -1,0 +1,709 @@
+{
+  "project": {
+    "_id": "60446796cca71e001b3e46c3",
+    "name": "Mental Health Tracker",
+    "teamID": "4DjZB29jmb",
+    "devVersion": "6044679675851d000747ef9d",
+    "platform": "general",
+    "platformData": {
+      "invocationName": "template project general"
+    },
+    "members": [],
+    "linkType": "STRAIGHT",
+    "image": "https://s3.amazonaws.com/com.getstoryflow.api.images/1615095696802-logo3_7_14356.png",
+    "creatorID": 55725,
+    "prototype": {
+      "nlp": {
+        "type": "LUIS",
+        "appID": "fe78b844-ad72-4631-9174-d8a3792e0b1f"
+      },
+      "data": {},
+      "trainedModel": {
+        "intents": [
+          {
+            "key": "VF.NO",
+            "name": "VF.NO",
+            "inputs": [
+              {
+                "text": "no"
+              },
+              {
+                "text": "nope"
+              },
+              {
+                "text": "nay"
+              },
+              {
+                "text": "nah"
+              },
+              {
+                "text": "no way"
+              },
+              {
+                "text": "negative"
+              }
+            ]
+          },
+          {
+            "key": "VF.YES",
+            "name": "VF.YES",
+            "inputs": [
+              {
+                "text": "yes"
+              },
+              {
+                "text": "yea"
+              },
+              {
+                "text": "ok"
+              },
+              {
+                "text": "okay"
+              },
+              {
+                "text": "yup"
+              },
+              {
+                "text": "ya"
+              },
+              {
+                "text": "sure"
+              }
+            ]
+          }
+        ],
+        "slots": []
+      },
+      "lastTrainedTime": 1615096237402
+    }
+  },
+  "version": {
+    "_id": "6044679675851d000747ef9d",
+    "name": "Initial Version",
+    "projectID": "60446796cca71e001b3e46c3",
+    "variables": [
+      "sessions",
+      "user_id",
+      "timestamp",
+      "platform",
+      "locale"
+    ],
+    "platformData": {
+      "slots": [],
+      "intents": [
+        {
+          "key": "th284477",
+          "name": "never",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "not at all",
+              "slots": []
+            },
+            {
+              "text": "never",
+              "slots": []
+            }
+          ]
+        },
+        {
+          "key": "w42d44tt",
+          "name": "almost_never",
+          "slots": [],
+          "inputs": []
+        }
+      ],
+      "settings": {
+        "restart": true,
+        "repeat": 100,
+        "locales": [
+          "en-US"
+        ]
+      },
+      "publishing": {},
+      "platform": "general"
+    },
+    "rootDiagramID": "6044679675851d000747ef9e",
+    "creatorID": 55725,
+    "prototype": {
+      "data": {
+        "name": "Mental Health Tracker",
+        "locales": [
+          "en-US"
+        ]
+      },
+      "model": {
+        "intents": [
+          {
+            "key": "VF.NO",
+            "name": "VF.NO",
+            "inputs": [
+              {
+                "text": "no"
+              },
+              {
+                "text": "nope"
+              },
+              {
+                "text": "nay"
+              },
+              {
+                "text": "nah"
+              },
+              {
+                "text": "no way"
+              },
+              {
+                "text": "negative"
+              }
+            ]
+          },
+          {
+            "key": "VF.YES",
+            "name": "VF.YES",
+            "inputs": [
+              {
+                "text": "yes"
+              },
+              {
+                "text": "yea"
+              },
+              {
+                "text": "ok"
+              },
+              {
+                "text": "okay"
+              },
+              {
+                "text": "yup"
+              },
+              {
+                "text": "ya"
+              },
+              {
+                "text": "sure"
+              }
+            ]
+          }
+        ],
+        "slots": []
+      },
+      "context": {
+        "stack": [
+          {
+            "storage": {},
+            "variables": {},
+            "programID": "6044679675851d000747ef9e"
+          }
+        ]
+      },
+      "settings": {}
+    }
+  },
+  "diagrams": {
+    "6044679675851d000747ef9e": {
+      "_id": "6044679675851d000747ef9e",
+      "offsetX": -2536.3892246733353,
+      "offsetY": -279.1723292111866,
+      "zoom": 91.41666666666667,
+      "nodes": {
+        "start00000000000000000000": {
+          "nodeID": "start00000000000000000000",
+          "type": "start",
+          "coords": [
+            360,
+            120
+          ],
+          "data": {
+            "name": "Start",
+            "color": "standard",
+            "ports": [
+              {
+                "type": "",
+                "target": "6032b053359e8c14c06c031f",
+                "id": "6032afcf359e8c14c06c0319"
+              }
+            ],
+            "steps": []
+          }
+        },
+        "6032b053359e8c14c06c031c": {
+          "nodeID": "6032b053359e8c14c06c031c",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "default",
+                "content": "Good day! Would you like to start the test?"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "6032b091359e8c14c06c0328",
+                "id": "6032b053359e8c14c06c031e"
+              }
+            ]
+          }
+        },
+        "6032b053359e8c14c06c031f": {
+          "nodeID": "6032b053359e8c14c06c031f",
+          "type": "block",
+          "coords": [
+            807.9999999999999,
+            120.24999999999997
+          ],
+          "data": {
+            "name": "Welcome Message",
+            "color": "standard",
+            "steps": [
+              "6032b053359e8c14c06c031c",
+              "6032b091359e8c14c06c0328"
+            ]
+          }
+        },
+        "6032b091359e8c14c06c0328": {
+          "nodeID": "6032b091359e8c14c06c0328",
+          "type": "interaction",
+          "data": {
+            "name": "Choice",
+            "else": {
+              "type": "reprompt",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "voice": "default",
+                  "content": ""
+                }
+              ]
+            },
+            "choices": [
+              {
+                "intent": "VF.YES",
+                "mappings": []
+              },
+              {
+                "intent": "VF.NO",
+                "mappings": []
+              }
+            ],
+            "reprompt": null,
+            "chips": [
+              {
+                "label": "Choice 1"
+              },
+              {
+                "label": "Choice 2"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "6032b091359e8c14c06c032b"
+              },
+              {
+                "type": "",
+                "target": "6044681c6945e5114c152709",
+                "id": "6032b091359e8c14c06c032c"
+              },
+              {
+                "type": 2,
+                "target": "604467d46945e5114c1526f8",
+                "id": "6032b094359e8c14c06c0330"
+              }
+            ]
+          }
+        },
+        "604467d46945e5114c1526f6": {
+          "nodeID": "604467d46945e5114c1526f6",
+          "type": "exit",
+          "data": {
+            "ports": []
+          }
+        },
+        "604467d46945e5114c1526f8": {
+          "nodeID": "604467d46945e5114c1526f8",
+          "type": "block",
+          "coords": [
+            794.2500226952944,
+            556.7500095644008
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "604467d46945e5114c1526f6"
+            ]
+          }
+        },
+        "6044681c6945e5114c152709": {
+          "nodeID": "6044681c6945e5114c152709",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "default",
+                "content": "In the LAST MONTH, how often have you:  Been upset because of something that happened unexpectedly?"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "604468746945e5114c15272d",
+                "id": "6044681c6945e5114c15270b"
+              }
+            ]
+          }
+        },
+        "6044681c6945e5114c15270c": {
+          "nodeID": "6044681c6945e5114c15270c",
+          "type": "block",
+          "coords": [
+            1299.2500226952943,
+            138.0000095644009
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6044681c6945e5114c152709",
+              "604468746945e5114c15272d"
+            ]
+          }
+        },
+        "604468746945e5114c15272d": {
+          "nodeID": "604468746945e5114c15272d",
+          "type": "capture",
+          "data": {
+            "slot": "Custom",
+            "variable": null,
+            "reprompt": null,
+            "slotInputs": [],
+            "chips": null,
+            "ports": [
+              {
+                "type": "",
+                "target": "6044688a6945e5114c152734",
+                "id": "604468746945e5114c152730"
+              }
+            ]
+          }
+        },
+        "6044688a6945e5114c152734": {
+          "nodeID": "6044688a6945e5114c152734",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "default",
+                "content": "In the LAST MONTH, how often have you:  Felt that you were unable to control important things in your life?"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "6044689d6945e5114c152740",
+                "id": "6044688a6945e5114c152736"
+              }
+            ]
+          }
+        },
+        "6044688a6945e5114c152737": {
+          "nodeID": "6044688a6945e5114c152737",
+          "type": "block",
+          "coords": [
+            1739.4896258223396,
+            156.09031891146265
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6044688a6945e5114c152734",
+              "6044689d6945e5114c152740"
+            ]
+          }
+        },
+        "6044689d6945e5114c152740": {
+          "nodeID": "6044689d6945e5114c152740",
+          "type": "capture",
+          "data": {
+            "slot": null,
+            "variable": null,
+            "reprompt": null,
+            "slotInputs": [],
+            "chips": null,
+            "ports": [
+              {
+                "type": "",
+                "target": "604468a76945e5114c152747",
+                "id": "6044689d6945e5114c152743"
+              }
+            ]
+          }
+        },
+        "604468a76945e5114c152747": {
+          "nodeID": "604468a76945e5114c152747",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "default",
+                "content": "In the LAST MONTH, how often have you:  Felt nervous and 'stressed'?"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "604468ba6945e5114c152753",
+                "id": "604468a76945e5114c152749"
+              }
+            ]
+          }
+        },
+        "604468a76945e5114c15274a": {
+          "nodeID": "604468a76945e5114c15274a",
+          "type": "block",
+          "coords": [
+            2349.5964458716417,
+            212.78711430998362
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "604468a76945e5114c152747",
+              "604468ba6945e5114c152753"
+            ]
+          }
+        },
+        "604468ba6945e5114c152753": {
+          "nodeID": "604468ba6945e5114c152753",
+          "type": "capture",
+          "data": {
+            "slot": null,
+            "variable": null,
+            "reprompt": null,
+            "slotInputs": [],
+            "chips": null,
+            "ports": [
+              {
+                "type": "",
+                "target": "604468ca6945e5114c15275a",
+                "id": "604468ba6945e5114c152756"
+              }
+            ]
+          }
+        },
+        "604468ca6945e5114c15275a": {
+          "nodeID": "604468ca6945e5114c15275a",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "default",
+                "content": "In the LAST MONTH, how often have you:  Felt confident about your ability to handle your personal problems?"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "604468d46945e5114c152764",
+                "id": "604468ca6945e5114c15275c"
+              }
+            ]
+          }
+        },
+        "604468ca6945e5114c15275d": {
+          "nodeID": "604468ca6945e5114c15275d",
+          "type": "block",
+          "coords": [
+            2973.261195255372,
+            267.0188316476993
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "604468ca6945e5114c15275a",
+              "604468d46945e5114c152764"
+            ]
+          }
+        },
+        "604468d46945e5114c152764": {
+          "nodeID": "604468d46945e5114c152764",
+          "type": "capture",
+          "data": {
+            "slot": null,
+            "variable": null,
+            "reprompt": null,
+            "slotInputs": [],
+            "chips": null,
+            "ports": [
+              {
+                "type": "",
+                "target": "604469316945e5114c1527a4",
+                "id": "604468d46945e5114c152766"
+              }
+            ]
+          }
+        },
+        "604469316945e5114c1527a4": {
+          "nodeID": "604469316945e5114c1527a4",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "default",
+                "content": "In the LAST MONTH, how often have you:  Felt that things were going your way?"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "6044693a6945e5114c1527af",
+                "id": "604469316945e5114c1527a6"
+              }
+            ]
+          }
+        },
+        "604469316945e5114c1527a7": {
+          "nodeID": "604469316945e5114c1527a7",
+          "type": "block",
+          "coords": [
+            3487.0535278320312,
+            361.0215740203857
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "604469316945e5114c1527a4",
+              "6044693a6945e5114c1527af"
+            ]
+          }
+        },
+        "6044693a6945e5114c1527af": {
+          "nodeID": "6044693a6945e5114c1527af",
+          "type": "capture",
+          "data": {
+            "slot": null,
+            "variable": null,
+            "reprompt": null,
+            "slotInputs": [],
+            "chips": null,
+            "ports": [
+              {
+                "type": "",
+                "target": "604469516945e5114c1527b7",
+                "id": "6044693a6945e5114c1527b2"
+              }
+            ]
+          }
+        },
+        "604469516945e5114c1527b7": {
+          "nodeID": "604469516945e5114c1527b7",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "default",
+                "content": "Can you provide an email for us to send you the results?"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "604469746945e5114c1527c3",
+                "id": "604469516945e5114c1527b9"
+              }
+            ]
+          }
+        },
+        "604469516945e5114c1527ba": {
+          "nodeID": "604469516945e5114c1527ba",
+          "type": "block",
+          "coords": [
+            3928.5935000984523,
+            531.8202325008422
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "604469516945e5114c1527b7",
+              "604469746945e5114c1527c3"
+            ]
+          }
+        },
+        "604469746945e5114c1527c3": {
+          "nodeID": "604469746945e5114c1527c3",
+          "type": "capture",
+          "data": {
+            "slot": null,
+            "variable": null,
+            "reprompt": null,
+            "slotInputs": [],
+            "chips": null,
+            "ports": [
+              {
+                "type": "",
+                "target": "6044697c6945e5114c1527ca",
+                "id": "604469746945e5114c1527c6"
+              }
+            ]
+          }
+        },
+        "6044697c6945e5114c1527ca": {
+          "nodeID": "6044697c6945e5114c1527ca",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "default",
+                "content": "Thank you. Goodbye!"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "6044697c6945e5114c1527cc"
+              }
+            ]
+          }
+        },
+        "6044697c6945e5114c1527cd": {
+          "nodeID": "6044697c6945e5114c1527cd",
+          "type": "block",
+          "coords": [
+            4371.619935832272,
+            614.9560574780528
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6044697c6945e5114c1527ca"
+            ]
+          }
+        }
+      },
+      "variables": [],
+      "children": [],
+      "name": "ROOT",
+      "versionID": "6044679675851d000747ef9d",
+      "creatorID": 55725,
+      "modified": 1615096229
+    }
+  }
+}
